@@ -1,0 +1,196 @@
+/* MAIN LAYOUT */
+.cart-main {
+  display: flex;
+  background: #f4f4f4;
+  padding: 15px;
+  gap: 15px;
+}
+
+/* ============================
+   SIDEBAR 
+=============================*/
+.cart-sidebar {
+  width: 250px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.cart-sidebar h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  border-color: #4CAF50;
+}
+
+/* ============================
+   RIGHT SIDE CONTENT
+=============================*/
+.cart-content {
+  flex: 1;
+}
+
+.cart-title {
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* ============================
+   GRID – 4 CARDS PER ROW
+=============================*/
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px; /* EXACT 5PX BETWEEN CARDS */
+}
+
+/* ============================
+   CARD STYLE
+=============================*/
+.cart-card {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+  transition: 0.25s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.cart-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+/* PRODUCT TEXT */
+.cart-info {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.cart-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5722;
+  margin: 6px 0;
+}
+
+/* STOCK BADGES */
+.mobile-stock {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0a9b37;
+}
+
+.mobile-stock.out {
+  color: red;
+}
+
+/* ============================
+   QTY BUTTONS
+=============================*/
+.cart-qty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.cart-qty button {
+  width: 32px;
+  height: 32px;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cart-qty button:hover {
+  background: #3e8e41;
+}
+
+.cart-qty span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* DISABLE + BUTTON IF OUT OF STOCK */
+.cart-qty button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ============================
+   RESPONSIVE
+=============================*/
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .cart-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cart-sidebar {
+    width: 200px;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  .cart-main {
+    flex-direction: column;
+  }
+
+  .cart-sidebar {
+    width: 100%;
+  }
+
+  .cart-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .cart-grid {
+    grid-template-columns: 1fr;
+  }
+}

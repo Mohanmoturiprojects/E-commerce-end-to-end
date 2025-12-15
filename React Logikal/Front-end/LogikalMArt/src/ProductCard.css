@@ -1,0 +1,128 @@
+/* ==== Product Card Container ==== */
+.product-card {
+  width: 280px;
+  height: 390px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(8, 57, 27, 0.18);
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* ==== Product Image ==== */
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* ==== Product Name ==== */
+.product-name {
+  font-size: 18px;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+/* ==== Product Price ==== */
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0066cc;
+  margin-bottom: 8px;
+}
+
+/* ==== Availability ==== */
+.availability {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.in-stock {
+  color: green;
+}
+
+.out-stock {
+  color: red;
+}
+
+/* ==== Quantity Controls ==== */
+.qty-controls {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  background: #087325;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.qty-btn:hover {
+  background: #2f49bd;
+}
+
+.qty-btn:disabled {
+  background: #0b765b;
+  cursor: not-allowed;
+}
+
+.qty-value {
+  font-size: 18px;
+  font-weight: bold;
+  width: 24px;
+  text-align: center;
+}
+
+/* ==== Add to Cart Button ==== */
+.add-btn {
+  width: 100%;
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+  background: #e65c00;
+  transform: scale(1.02);
+}
+
+.add-btn:disabled {
+  background: rgb(195, 136, 136);
+  cursor: not-allowed;
+}

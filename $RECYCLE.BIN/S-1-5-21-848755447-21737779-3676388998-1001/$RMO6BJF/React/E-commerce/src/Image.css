@@ -1,0 +1,34 @@
+
+.image-scroller {
+  display: flex;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 12px;
+  padding: 10px;
+  max-width: 100vw;      /* Constrain width */
+  margin: 0 auto;        /* Center container */
+  box-sizing: border-box;
+}
+
+.image-wrapper {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cart-link svg {
+  height: 28px;
+  width: auto;
+}
+
+

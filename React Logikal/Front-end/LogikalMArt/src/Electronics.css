@@ -1,0 +1,26 @@
+.electronics-page {
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) !important; 
+  gap: 5px !important;                                
+  padding: 10px;
+  width: 93vw;
+}
+.product-card {
+  width: 270px !important;   
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.products-grid > div {
+  width: 100%;
+}

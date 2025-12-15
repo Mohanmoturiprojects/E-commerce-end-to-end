@@ -1,0 +1,194 @@
+.manager-container {
+  width: 97vw;         
+  max-width: none;     
+  margin: 0;            /* No center margin */
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;    /* Nice fill for the browser window */
+}
+
+.dropdown {
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+.manager-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.manager-table th,
+.manager-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.edit-btn,
+.delete-btn,
+.add-btn,
+.update-btn {
+  margin: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+.add-btn,
+.update-btn {
+  background-color: #3498db;
+  color: white;
+  margin-top: 10px;
+}
+
+.product-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.product-form input {
+  padding: 8px;
+  flex: 1;
+  min-width: 150px;
+}
+.toast-message {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  min-width: 220px;
+  background: #27ae60;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  z-index: 1000;
+  opacity: 0.95;
+  transition: opacity 0.3s;
+}
+
+/* Container */
+.manager-container {
+  width: 97vw;
+  padding: 20px;
+  background: #f3f6fa;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Summary Section */
+.summary-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* Center everything */
+  width: 100%;
+}
+
+/* Inputs */
+.summary-inputs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-inputs input {
+  padding: 10px;
+  width: 140px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* Chart Card – Bigger + Centered */
+.chart-card {
+  background: white;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+
+  width: 91vw;          /* Bigger bar charts */
+  max-width: none;
+  margin-left: 30px;     /* Center horizontally */
+  margin-right: auto;
+}
+
+/* Toast */
+.toast-message {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  min-width: 220px;
+  background: #27ae60;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  z-index: 1000;
+}
+
+/* Pie Charts Container */
+.charts-container {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Pie Chart Grid */
+.pie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+  max-width: 92vw;
+  justify-content: center; /* center all pies */
+}
+
+/* Individual Pie Card */
+.single-pie-card {
+  width: 320px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.chart-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.total-box {
+  padding: 20px;
+  background: #d830bc87;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  min-width: 420px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
